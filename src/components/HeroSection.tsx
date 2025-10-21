@@ -1,10 +1,4 @@
-interface HeroSectionProps {
-  backgroundImage: string;
-  title: string;
-  subtitle?: string;
-  buttonText?: string;
-  buttonAction?: () => void;
-}
+import type { HeroSectionProps } from "../types/hero";
 
 export const HeroSection = ({
   backgroundImage,

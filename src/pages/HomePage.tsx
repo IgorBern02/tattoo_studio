@@ -1,4 +1,5 @@
 import { HeroSection } from "../components/HeroSection";
+import { Header } from "../components/Header";
 import heroImage from "../assets/images/herobg.jpg";
 
 export function HomePage() {
@@ -8,6 +9,7 @@ export function HomePage() {
 
   return (
     <div>
+      <Header />
       <HeroSection
         backgroundImage={heroImage}
         title="Arte que marca"
