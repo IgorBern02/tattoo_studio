@@ -4,12 +4,13 @@ export const HeroSection = ({
   backgroundImage,
   title,
   subtitle,
+  subtitlebutton,
   buttonText,
   buttonAction,
 }: HeroSectionProps) => {
   return (
     <section
-      className="relative w-full h-screen flex items-center justify-center text-center"
+      className="relative w-full h-screen flex items-center justify-center text-center px-6"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
@@ -20,17 +21,24 @@ export const HeroSection = ({
       <div className="absolute inset-0 bg-black/60"></div>
 
       {/* Conteúdo */}
-      <div className="relative z-10 px-4">
-        <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
+      <div className="absolute right-30 z-10 px-4flex flex-col items-center py-10 ">
+        <h1 className="text-5xl text-secondary p-4 w-[400px] text-left uppercase">
           {title}
         </h1>
         {subtitle && (
-          <p className="text-lg md:text-xl text-gray-200 mb-8">{subtitle}</p>
+          <p className="text-sm text-gray-200 relative bottom-[30px] p-4 w-[400px] text-left">
+            {subtitle}
+          </p>
+        )}
+        {subtitlebutton && (
+          <p className="text-[10px] text-gray-200 p-4 w-[400px] text-left">
+            {subtitlebutton}
+          </p>
         )}
         {buttonText && buttonAction && (
           <button
             onClick={buttonAction}
-            className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+            className="relative right-27 text-[13px] bg-[#C19A6B] hover:bg-[#e9a758] text-white font-semibold py-3 px-6 rounded-lg transition-colors cursor-pointer"
           >
             {buttonText}
           </button>

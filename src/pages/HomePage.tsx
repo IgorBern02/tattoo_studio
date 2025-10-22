@@ -12,9 +12,10 @@ export function HomePage() {
       <Header />
       <HeroSection
         backgroundImage={heroImage}
-        title="Arte que marca"
-        subtitle="Transforme sua pele em uma obra de arte única"
-        buttonText="Agende agora"
+        title="Artes que contam sua história"
+        subtitle="Cada traço é uma expressão única."
+        subtitlebutton="Agende seu horario e transforme sua pele em uma obra de arte."
+        buttonText="Agendar sessão"
         buttonAction={handleClick}
       />
     </div>
