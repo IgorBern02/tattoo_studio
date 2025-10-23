@@ -1,26 +1,31 @@
+import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import IconeMenu from "../assets/icons/Menu.svg";
+import { MenuHamburguer } from "./MenuHamburguer";
+
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  function handleMenuToggle() {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
   return (
-    <header className="w-full p-5 flex justify-center items-center relative uppercase text-[12px] text-white bg-bg backdrop-blur-sm ">
-      <h1 className="text-xl p-2 font-bold absolute left-10 text-light text-center w-30 wrap-break-words">
+    <header className="w-full h-16 backdrop-blur-sm flex items-center justify-between px-4 md:px-8 relative z-10">
+      <h1 className="text-white text-xl uppercase font-bold p-2">
         Tattoo Studio
       </h1>
-      <ul className="flex gap-4">
-        <li className="hover:text-secondary cursor-pointer hover:text-[#C19A6B] duration-300">
-          Artistas
-        </li>
-        <li className="hover:text-secondary cursor-pointer hover:text-[#C19A6B] duration-300">
-          Galeria
-        </li>
-        <li className="hover:text-secondary cursor-pointer hover:text-[#C19A6B] duration-300">
-          Início
-        </li>
-        <li className="hover:text-secondary cursor-pointer hover:text-[#C19A6B] duration-300">
-          Sobre
-        </li>
-        <li className="hover:text-secondary cursor-pointer hover:text-[#C19A6B] duration-300">
-          FAQ
-        </li>
-      </ul>
+
+      <img
+        src={IconeMenu}
+        alt="Menu"
+        onClick={handleMenuToggle}
+        className="cursor-pointer"
+      />
+
+      <AnimatePresence>
+        {isMenuOpen && <MenuHamburguer onClick={handleMenuToggle} />}
+      </AnimatePresence>
     </header>
   );
 };

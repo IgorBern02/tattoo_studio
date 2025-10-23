@@ -8,7 +8,7 @@ export function HomePage() {
   };
 
   return (
-    <div>
+    <div className="w-full h-full">
       <Header />
       <HeroSection
         backgroundImage={heroImage}
