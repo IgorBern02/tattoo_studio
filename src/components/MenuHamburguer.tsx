@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import XIcon from "../assets/icons/X.svg";
 import Inicio from "../assets/icons/Inicio.svg";
 import Sobre from "../assets/icons/Sobre.svg";
@@ -14,11 +14,11 @@ interface MenuHamburguerProps {
 export const MenuHamburguer = ({ onClick }: MenuHamburguerProps) => {
   return (
     <motion.div
-      initial={{ x: "100%" }} // começa fora da tela (direita)
-      animate={{ x: 0 }} // entra deslizando
-      exit={{ x: "100%" }} // sai deslizando
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "100%" }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
-      className="bg-primary p-3 absolute right-0 top-0 h-screen z-10 w-4/5 flex flex-col items-center rounded-l-2xl shadow-lg"
+      className="bg-primary p-3 absolute right-0 top-0 h-screen z-40 w-4/5 flex flex-col items-center rounded-l-2xl shadow-lg"
     >
       <div className="mb-10 mt-4 absolute right-10 top-0 p-3 cursor-pointer">
         <img src={XIcon} alt="Close" onClick={onClick} />
@@ -35,7 +35,7 @@ export const MenuHamburguer = ({ onClick }: MenuHamburguerProps) => {
           ].map(({ icon, label }) => (
             <motion.li
               key={label}
-              whileHover={{ x: 8 }} // move levemente ao passar o mouse
+              whileHover={{ x: 8 }}
               className="flex flex-row gap-4 cursor-pointer w-full h-auto py-2 duration-300"
             >
               <img src={icon} alt={label} className="w-6 h-6" />

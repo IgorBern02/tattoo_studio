@@ -20,7 +20,7 @@ export const Header = () => {
         src={IconeMenu}
         alt="Menu"
         onClick={handleMenuToggle}
-        className="cursor-pointer"
+        className="cursor-pointer md:hidden"
       />
 
       <AnimatePresence>

@@ -18,27 +18,27 @@ export const HeroSection = ({
       }}
     >
       {/* Gradiente escuro */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
 
       {/* Conteúdo */}
-      <div className="absolute right-30 px-4flex flex-col items-center py-10 ">
-        <h1 className="text-5xl text-secondary p-4 w-[400px] text-left uppercase">
+      <div className="w-full flex flex-col items-start p-3 ">
+        <h1 className="relative text-5xl text-secondary p-4 w-full text-left uppercase">
           {title}
         </h1>
         {subtitle && (
-          <p className="text-sm text-gray-200 relative bottom-[30px] p-4 w-[400px] text-left">
+          <p className="relative text-sm text-gray-200  bottom-[30px] p-4 w-full text-left">
             {subtitle}
           </p>
         )}
         {subtitlebutton && (
-          <p className="text-[10px] text-gray-200 p-4 w-[400px] text-left">
+          <p className="relative text-sm text-gray-200 p-4 w-full text-left">
             {subtitlebutton}
           </p>
         )}
         {buttonText && buttonAction && (
           <button
             onClick={buttonAction}
-            className="relative right-27 text-[13px] bg-[#C19A6B] text-white font-semibold py-3 px-6 rounded-lg transition-colors cursor-pointer"
+            className="relative text-md bg-secondary hover:bg-accent ml-4 text-white font-semibold py-3 px-6 rounded-lg duration-300 cursor-pointer"
           >
             {buttonText}
           </button>
