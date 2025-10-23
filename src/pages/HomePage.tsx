@@ -2,6 +2,7 @@ import { HeroSection } from "../components/HeroSection";
 import { Header } from "../components/Header";
 import { About } from "../components/About";
 import { Galery } from "../components/Galery";
+import { Artists } from "../components/Artists";
 import heroImage from "../assets/images/herobg.jpg";
 import Aboutbg from "../assets/images/aboutbg.jpg";
 import Galerybg from "../assets/images/galerybg.jpg";
@@ -13,7 +14,7 @@ export function HomePage() {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden">
-      <Header />
+      <Header Title="Tattoo Studio" />
       <HeroSection
         backgroundImage={heroImage}
         title="Artes que contam sua história"
@@ -24,6 +25,7 @@ export function HomePage() {
       />
       <About backgroundImage={Aboutbg} />
       <Galery backgroundImage={Galerybg} />
+      <Artists Title=" Veja nossos artistas" />
     </div>
   );
 }
