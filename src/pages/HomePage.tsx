@@ -1,6 +1,8 @@
 import { HeroSection } from "../components/HeroSection";
 import { Header } from "../components/Header";
+import { About } from "../components/About";
 import heroImage from "../assets/images/herobg.jpg";
+import Aboutbg from "../assets/images/aboutbg.jpg";
 
 export function HomePage() {
   const handleClick = () => {
@@ -8,7 +10,7 @@ export function HomePage() {
   };
 
   return (
-    <div className="w-full h-full">
+    <div className="relative min-h-screen overflow-x-hidden">
       <Header />
       <HeroSection
         backgroundImage={heroImage}
@@ -18,6 +20,7 @@ export function HomePage() {
         buttonText="Agendar sessão"
         buttonAction={handleClick}
       />
+      <About backgroundImage={Aboutbg} />
     </div>
   );
 }

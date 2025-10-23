@@ -10,7 +10,7 @@ export const HeroSection = ({
 }: HeroSectionProps) => {
   return (
     <section
-      className="absolute top-0 w-full h-screen flex items-center justify-center text-center"
+      className="relative w-full min-h-screen flex items-center justify-center text-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
