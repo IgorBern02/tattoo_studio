@@ -1,8 +1,10 @@
 import { HeroSection } from "../components/HeroSection";
 import { Header } from "../components/Header";
 import { About } from "../components/About";
+import { Galery } from "../components/Galery";
 import heroImage from "../assets/images/herobg.jpg";
 import Aboutbg from "../assets/images/aboutbg.jpg";
+import Galerybg from "../assets/images/galerybg.jpg";
 
 export function HomePage() {
   const handleClick = () => {
@@ -21,6 +23,7 @@ export function HomePage() {
         buttonAction={handleClick}
       />
       <About backgroundImage={Aboutbg} />
+      <Galery backgroundImage={Galerybg} />
     </div>
   );
 }
