@@ -3,6 +3,7 @@ import { Header } from "../components/Header";
 import { About } from "../components/About";
 import { Galery } from "../components/Galery";
 import { Artists } from "../components/Artists";
+import { Footer } from "../components/Footer";
 import heroImage from "../assets/images/herobg.jpg";
 import Aboutbg from "../assets/images/aboutbg.jpg";
 import Galerybg from "../assets/images/galerybg.jpg";
@@ -26,6 +27,7 @@ export function HomePage() {
       <About backgroundImage={Aboutbg} />
       <Galery backgroundImage={Galerybg} />
       <Artists Title=" Veja nossos artistas" />
+      <Footer />
     </div>
   );
 }

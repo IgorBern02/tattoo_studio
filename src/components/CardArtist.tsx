@@ -6,7 +6,7 @@ export const CardArtist = ({
   StyleTattoo,
 }: CardArtistProps) => {
   return (
-    <div className="bg-[#1D1D1D] p-6 rounded-4xl shadow-lg w-65 h-4/6 border border-secondary ">
+    <div className="bg-[#1D1D1D] p-6 rounded-4xl shadow-lg w-65 h-4/6 ">
       {/* Conteúdo dos artistas */}
       <div className="flex flex-row items-center overflow-hidden mx-auto mb-4 gap-4">
         <div className="bg-red-500 w-14 h-14 rounded-full overflow-hidden shrink-0">
