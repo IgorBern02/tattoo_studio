@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import IconeMenu from "../assets/icons/Menu.svg";
 import { MenuHamburguer } from "./MenuHamburguer";
-import type { HeaderProps } from "../types/header";
+import type { HeaderProps } from "../../types/header";
 
 export const Header = ({ Title }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

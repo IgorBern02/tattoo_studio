@@ -1,9 +1,9 @@
-import { HeroSection } from "../components/HeroSection";
-import { Header } from "../components/Header";
-import { About } from "../components/About";
-import { Galery } from "../components/Galery";
-import { Artists } from "../components/Artists";
-import { Footer } from "../components/Footer";
+import { HeroSection } from "../components/Hero/HeroSection";
+import { Header } from "../components/Header/Header";
+import { About } from "../components/About/About";
+import { Galery } from "../components/Galery/Galery";
+import { Artists } from "../components/Artists/Artists";
+import { Footer } from "../components/Footer/Footer";
 import heroImage from "../assets/images/herobg.jpg";
 import Aboutbg from "../assets/images/aboutbg.jpg";
 import Galerybg from "../assets/images/galerybg.jpg";

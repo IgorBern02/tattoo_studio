@@ -1,4 +1,4 @@
-import type { CardArtistProps } from "../types/cardArtist";
+import type { CardArtistProps } from "../../types/cardArtist";
 export const CardArtist = ({
   Artist,
   Tattoo,

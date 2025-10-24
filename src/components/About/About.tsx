@@ -1,6 +1,6 @@
 import TattoMachine from "../assets/icons/TattooMachine.svg";
 import AboutUsVideo from "../assets/videos/about.mp4";
-import type { AboutProps } from "../types/about";
+import type { AboutProps } from "../../types/about";
 
 export const About = ({ backgroundImage }: AboutProps) => {
   return (

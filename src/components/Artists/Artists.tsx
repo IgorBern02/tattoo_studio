@@ -1,6 +1,6 @@
 import { CardArtist } from "./CardArtist";
-import type { ArtistsProps } from "../types/artists";
-import { ArrayArtists } from "../data/artistsData";
+import type { ArtistsProps } from "../../types/artists";
+import { ArrayArtists } from "../../data/artistsData";
 export const Artists = ({ Title }: ArtistsProps) => {
   return (
     <section className="relative w-full min-h-screen flex flex-col gap-10 items-center justify-center text-center mt-30">

@@ -1,4 +1,4 @@
-import type { HeroSectionProps } from "../types/hero";
+import type { HeroSectionProps } from "../../types/hero";
 
 export const HeroSection = ({
   backgroundImage,
