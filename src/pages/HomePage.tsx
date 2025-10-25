@@ -1,12 +1,13 @@
 import { HeroSection } from "../components/Hero/HeroSection";
 import { Header } from "../components/Header/Header";
 import { About } from "../components/About/About";
-import { Galery } from "../components/Galery/Galery";
+import { Galery } from "../components/Gallery/Gallery";
 import { Artists } from "../components/Artists/Artists";
 import { Footer } from "../components/Footer/Footer";
+import { Faq } from "../components/Faq/Faq";
 import heroImage from "../assets/images/herobg.jpg";
 import Aboutbg from "../assets/images/aboutbg.jpg";
-import Galerybg from "../assets/images/galerybg.jpg";
+import Gallerybg from "../assets/images/gallerybg.jpg";
 
 export function HomePage() {
   const handleClick = () => {
@@ -25,8 +26,9 @@ export function HomePage() {
         buttonAction={handleClick}
       />
       <About backgroundImage={Aboutbg} />
-      <Galery backgroundImage={Galerybg} />
+      <Galery backgroundImage={Gallerybg} />
       <Artists Title=" Veja nossos artistas" />
+      <Faq />
       <Footer />
     </div>
   );

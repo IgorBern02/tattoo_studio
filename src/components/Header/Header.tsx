@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import IconeMenu from "../assets/icons/Menu.svg";
+import IconeMenu from "../../assets/icons/Menu.svg";
 import { MenuHamburguer } from "./MenuHamburguer";
 import type { HeaderProps } from "../../types/header";
 

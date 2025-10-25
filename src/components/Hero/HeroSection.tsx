@@ -10,6 +10,7 @@ export const HeroSection = ({
 }: HeroSectionProps) => {
   return (
     <section
+      id="hero"
       className="relative w-full min-h-screen flex items-center justify-center text-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,

@@ -1,11 +1,12 @@
-import TattoMachine from "../assets/icons/TattooMachine.svg";
-import AboutUsVideo from "../assets/videos/about.mp4";
+import TattoMachine from "../../assets/icons/TattooMachine.svg";
+import AboutUsVideo from "../../assets/videos/about.mp4";
 import type { AboutProps } from "../../types/about";
 
 export const About = ({ backgroundImage }: AboutProps) => {
   return (
     <section
-      className="relative w-full min-h-screen flex items-center justify-center text-center "
+      id="about"
+      className="relative w-full min-h-screen flex items-center justify-center text-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",

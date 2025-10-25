@@ -6,6 +6,7 @@ interface GaleryProps {
 export const Galery = ({ backgroundImage }: GaleryProps) => {
   return (
     <section
+      id="gallery"
       className="relative w-full min-h-screen flex flex-col gap-10 items-center justify-center text-center "
       style={{
         backgroundImage: `url(${backgroundImage})`,

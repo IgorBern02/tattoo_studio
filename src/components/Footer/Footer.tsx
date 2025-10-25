@@ -1,13 +1,13 @@
-import TattooMachine from "../assets/icons/TattooMachine.svg";
-import Address from "../assets/icons/Address.svg";
-import Phone from "../assets/icons/Phone.svg";
-import Clock from "../assets/icons/Clock.svg";
+import TattooMachine from "../../assets/icons/TattooMachine.svg";
+import Address from "../../assets/icons/Address.svg";
+import Phone from "../../assets/icons/Phone.svg";
+import Clock from "../../assets/icons/Clock.svg";
 import { FooterHeader } from "./FooterHeader";
 import { FooterInfoItem } from "./FooterInfoItem";
 
 export const Footer = () => {
   return (
-    <footer className="w-full text-white bg-[#090909] px-5 py-2">
+    <footer className="w-full text-white bg-[#090909] px-5 py-2" id="footer">
       <FooterHeader title="Tattoo Studio" icon={TattooMachine} />
 
       <ul className="flex flex-col">

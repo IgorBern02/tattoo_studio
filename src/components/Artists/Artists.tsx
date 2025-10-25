@@ -3,7 +3,10 @@ import type { ArtistsProps } from "../../types/artists";
 import { ArrayArtists } from "../../data/artistsData";
 export const Artists = ({ Title }: ArtistsProps) => {
   return (
-    <section className="relative w-full min-h-screen flex flex-col gap-10 items-center justify-center text-center mt-30">
+    <section
+      className="relative w-full min-h-screen flex flex-col gap-10 items-center justify-center text-center mt-30"
+      id="artists"
+    >
       <div className="flex flex-col items-center justify-centerp-10 rounded-xl ">
         <h2 className="relative text-2xl font-bold text-secondary uppercase mb-6">
           {Title}
