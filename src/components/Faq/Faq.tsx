@@ -2,7 +2,10 @@ import { CardFaq } from "./CardFaq";
 
 export const Faq = () => {
   return (
-    <div className="w-full  text-white flex flex-col justify-center items-center p-4 gap-4">
+    <div
+      className="w-full  text-white flex flex-col justify-center items-center p-4 gap-4"
+      id="faq"
+    >
       <p className="flex flex-row justify-center items-center text-2xl ">
         Perguntas Frequentes
       </p>

@@ -15,12 +15,15 @@ export const ArrayArtists = [
     Tattoo: Tatuagem1,
     NameTattoo: "Junior",
     StyleTattoo: "Realismo / Old School",
+    bio: "Especialista em tatuagens realistas e estilo old school, Junior traz vida às suas ideias com detalhes impressionantes.",
+    Tattoos: [Tatuagem1, Tatuagem2, Tatuagem3],
   },
   {
     Artist: People2,
     Tattoo: Tatuagem2,
     NameTattoo: "Leandro Silva",
     StyleTattoo: "Tribal Tattoo / Blackwork",
+    Tattoos: [Tatuagem3, Tatuagem4, Tatuagem5],
   },
   {
     Artist: People3,

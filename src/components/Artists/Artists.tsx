@@ -1,6 +1,7 @@
 import { CardArtist } from "./CardArtist";
 import type { ArtistsProps } from "../../types/artists";
 import { ArrayArtists } from "../../data/artistsData";
+import { Link } from "react-router-dom";
 export const Artists = ({ Title }: ArtistsProps) => {
   return (
     <section
@@ -14,13 +15,15 @@ export const Artists = ({ Title }: ArtistsProps) => {
         <div className="flex flex-col justify-center items-center gap-10">
           {ArrayArtists.map(
             ({ Artist, Tattoo, NameTattoo, StyleTattoo }, index) => (
-              <CardArtist
-                key={index}
-                Artist={Artist}
-                Tattoo={Tattoo}
-                NameTattoo={NameTattoo}
-                StyleTattoo={StyleTattoo}
-              />
+              <Link to={`/artist/${index}`}>
+                <CardArtist
+                  key={index}
+                  Artist={Artist}
+                  Tattoo={Tattoo}
+                  NameTattoo={NameTattoo}
+                  StyleTattoo={StyleTattoo}
+                />
+              </Link>
             )
           )}
         </div>
