@@ -9,10 +9,10 @@ export const Artists = ({ Title }: ArtistsProps) => {
       id="artists"
     >
       <div className="flex flex-col items-center justify-centerp-10 rounded-xl ">
-        <h2 className="relative text-2xl font-bold text-secondary uppercase mb-6">
+        <h2 className="relative text-2xl md:text-3xl font-bold text-secondary uppercase mb-6">
           {Title}
         </h2>
-        <div className="flex flex-col justify-center items-center gap-10">
+        <div className="flex md:grid md:grid-cols-2 flex-col md:flex-row justify-center items-center gap-10">
           {ArrayArtists.map(
             ({ Artist, Tattoo, NameTattoo, StyleTattoo }, index) => (
               <Link to={`/artist/${index}`}>

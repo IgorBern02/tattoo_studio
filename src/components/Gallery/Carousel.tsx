@@ -23,54 +23,54 @@ export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
+    setCurrentIndex((prev) => (prev + 2) % images.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+    setCurrentIndex((prev) => (prev - 2 + images.length) % images.length);
   };
 
+  // Pega duas imagens (a atual e a próxima)
+  const visibleImages = [
+    images[currentIndex],
+    images[(currentIndex + 1) % images.length],
+  ];
+
   return (
-    <div className="relative w-full max-w-lg mx-auto overflow-hidden shadow-lg p-8">
-      <div className="flex justify-center items-center w-4/5 mx-auto">
-        <img
-          src={images[currentIndex]}
-          alt={`Slide ${currentIndex + 1}`}
-          className="w-full h-65 object-cover transition-all duration-500 rounded-2xl"
-        />
+    <div className="relative w-full max-w-2xl mx-auto overflow-hidden shadow-lg p-8">
+      <div className="flex justify-center items-center gap-4 transition-all duration-500 p-2">
+        {visibleImages.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt={`Slide ${currentIndex + index + 1}`}
+            className="w-1/2 h-72 object-cover rounded-2xl shadow-md"
+          />
+        ))}
       </div>
 
       {/* Botões de navegação */}
       <button
         onClick={prevSlide}
-        className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+        className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
       >
         ◀
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+        className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
       >
         ▶
       </button>
 
-      {/* Indicadores */}
-      {/* <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-        {images.map((_, i) => (
-          <span
-            key={i}
-            className={`h-2 w-2 rounded-full ${
-              i === currentIndex ? "bg-white" : "bg-gray-500"
-            }`}
-          ></span>
-        ))}
-      </div> */}
-
+      {/* Barra de progresso */}
       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-5/6 h-0.5 bg-white/30 rounded-full overflow-hidden">
         <div
           className="h-full bg-secondary transition-all duration-500"
           style={{
-            width: `${((currentIndex + 1) / images.length) * 100}%`,
+            width: `${
+              (((currentIndex + 2) % images.length) / images.length) * 100
+            }%`,
           }}
         ></div>
       </div>

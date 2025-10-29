@@ -1,17 +1,16 @@
 import { motion } from "framer-motion";
 import XIcon from "../../assets/icons/X.svg";
-import Inicio from "../../assets/icons/Home.svg";
-import Sobre from "../../assets/icons/About.svg";
-import Galeria from "../../assets/icons/Gallery.svg";
-import Artistas from "../../assets/icons/Artists.svg";
-import FAQ from "../../assets/icons/Faq.svg";
 import TattooMachine from "../../assets/icons/TattooMachine.svg";
+import { menuItems } from "./menuItems";
+import { useScrollNavigation } from "../../hooks/useScrollNavigation";
 
 interface MenuHamburguerProps {
   onClick: () => void;
 }
 
 export const MenuHamburguer = ({ onClick }: MenuHamburguerProps) => {
+  const { scrollToSection } = useScrollNavigation();
+
   return (
     <motion.div
       initial={{ x: "100%" }}
@@ -24,35 +23,24 @@ export const MenuHamburguer = ({ onClick }: MenuHamburguerProps) => {
         <img src={XIcon} alt="Close" onClick={onClick} />
       </div>
 
-      <div className="w-full h-full flex flex-col items-center">
-        <ul className="flex flex-col gap-4 w-full mt-20 text-white p-5 items-start">
-          {[
-            { icon: Inicio, label: "Início", link: "#hero" },
-            { icon: Sobre, label: "Sobre", link: "#about" },
-            { icon: Galeria, label: "Galeria", link: "#gallery" },
-            { icon: Artistas, label: "Artistas", link: "#artists" },
-            { icon: FAQ, label: "FAQ", link: "#faq" },
-          ].map(({ icon, label, link }) => (
-            <motion.li
-              key={label}
-              whileHover={{ x: 8 }}
-              className="flex flex-row gap-4 cursor-pointer w-full h-auto py-2 duration-300"
-            >
-              <img src={icon} alt={label} className="w-6 h-6" />
-              <span className="text-md uppercase">
-                <a href={link} onClick={onClick}>
-                  {label}
-                </a>
-              </span>
-            </motion.li>
-          ))}
-        </ul>
+      <ul className="flex flex-col gap-4 w-full mt-20 text-white p-5 items-start">
+        {menuItems.map(({ icon, label, section }) => (
+          <motion.li
+            key={label}
+            whileHover={{ x: 8 }}
+            className="flex flex-row gap-4 cursor-pointer w-full py-2"
+            onClick={() => scrollToSection(section, onClick)}
+          >
+            <img src={icon} alt={label} className="w-6 h-6" />
+            <span className="text-md uppercase">{label}</span>
+          </motion.li>
+        ))}
+      </ul>
 
-        <span className="flex flex-row gap-3 text-white uppercase font-bold absolute bottom-10 text-xl">
-          Tattoo Studio
-          <img src={TattooMachine} alt="Tattoo Machine" />
-        </span>
-      </div>
+      <span className="flex flex-row gap-3 text-white uppercase font-bold absolute bottom-10 text-xl">
+        Tattoo Studio
+        <img src={TattooMachine} alt="Tattoo Machine" />
+      </span>
     </motion.div>
   );
 };

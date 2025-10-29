@@ -17,12 +17,12 @@ export const About = ({ backgroundImage }: AboutProps) => {
       {/* Gradiente escuro */}
       <div className="absolute inset-0 bg-black/60 z-0"></div>
       <div className="flex flex-col justify-center gap-3">
-        <h2 className="relative flex flex-row gap-3 text-2xl font-bold text-secondary p-4 w-full text-left uppercase">
+        <h2 className="relative flex flex-row md:justify-center md:items-center gap-3 text-2xl md:text-3xl font-bold text-secondary p-4 w-full text-left uppercase">
           Sobre o Tattoo Studio
           <img src={TattoMachine} alt="Tatto Machine" />
         </h2>
         <div className="h-0.5 w-5/6 bg-white ml-5"></div>
-        <p className="relative text-sm text-gray-200 p-4 w-full text-left">
+        <p className="relative text-sm md:text-lg text-gray-200 p-4 w-full text-left">
           No Tattoo Studio, acreditamos que cada tatuagem é uma obra de arte
           única que reflete a personalidade e a história de quem a carrega. Com
           uma equipe de artistas talentosos e apaixonados, oferecemos um
@@ -30,13 +30,15 @@ export const About = ({ backgroundImage }: AboutProps) => {
           realidade. Venha nos visitar e descubra como podemos ajudar você a
           expressar sua individualidade através da arte na pele.
         </p>
-        <video
-          src={AboutUsVideo}
-          controls
-          muted
-          playsInline
-          className="w-full max-w-2xl p-5 rounded-2xl shadow-lg border border-white/20"
-        ></video>
+        <div className="flex items-center justify-center">
+          <video
+            src={AboutUsVideo}
+            controls
+            muted
+            playsInline
+            className="flex flex-row items-center justify-center w-full max-w-2xl p-5 rounded-2xl shadow-lg border border-white/20 md:max-w-3xl"
+          ></video>
+        </div>
       </div>
     </section>
   );
