@@ -24,7 +24,7 @@ export const ArrayArtists = [
     NameTattoo: "Leandro Silva",
     StyleTattoo: "Tribal Tattoo / Blackwork",
     bio: "Leandro é mestre em tatuagens tribais e blackwork, criando designs ousados e significativos que refletem a cultura e a identidade.",
-    Tattoos: [Tatuagem3, Tatuagem4, Tatuagem5],
+    Tattoos: [Tatuagem3, Tatuagem4, Tatuagem5, Tatuagem1, Tatuagem2, Tatuagem2],
   },
   {
     Artist: People3,
@@ -32,7 +32,15 @@ export const ArrayArtists = [
     NameTattoo: "Nakamura Kenji",
     StyleTattoo: "Oriental Tattoo",
     bio: "Nakamura Kenji é um artista especializado em tatuagens orientais, combinando tradição e modernidade para criar obras de arte únicas.",
-    Tattoos: [Tatuagem1, Tatuagem5],
+    Tattoos: [
+      Tatuagem1,
+      Tatuagem5,
+      Tatuagem3,
+      Tatuagem2,
+      Tatuagem4,
+      Tatuagem3,
+      Tatuagem1,
+    ],
   },
   {
     Artist: People4,
@@ -40,7 +48,7 @@ export const ArrayArtists = [
     NameTattoo: "Mika Tanaka",
     StyleTattoo: "Piercing / Minimalist Tattoo",
     bio: "Mika Tanaka é uma artista versátil, especializada em piercings e tatuagens minimalistas, oferecendo designs delicados e elegantes.",
-    Tattoos: [Tatuagem2, Tatuagem3, Tatuagem4],
+    Tattoos: [Tatuagem2, Tatuagem3, Tatuagem4, Tatuagem1],
   },
   {
     Artist: People5,
@@ -48,6 +56,6 @@ export const ArrayArtists = [
     NameTattoo: "Lari Costa",
     StyleTattoo: "Realismo / Fineline",
     bio: "Lari Costa é conhecida por suas tatuagens em realismo e fineline, criando peças detalhadas e sofisticadas que capturam a essência de cada cliente.",
-    Tattoos: [Tatuagem1, Tatuagem2, Tatuagem5],
+    Tattoos: [Tatuagem1, Tatuagem2, Tatuagem5, Tatuagem4, Tatuagem3],
   },
 ];
