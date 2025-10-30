@@ -23,7 +23,7 @@ export const Footer = () => {
       </ul>
 
       <div className="w-full p-2 flex justify-center items-center mt-10">
-        <p className="text-[8px] text-center">
+        <p className="text-[8px] md:text-[10px] text-center">
           © 2025 Tattoo Studio. Todos os direitos reservados. Desenvolvido por{" "}
           <span className="font-semibold">Igor Bern</span>.
         </p>
