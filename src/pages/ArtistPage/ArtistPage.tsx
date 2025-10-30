@@ -21,21 +21,25 @@ export const ArtistPage = () => {
       <Header Title="Tattoo Studio" />
 
       {/* Seção principal */}
-      <div className="flex flex-col md:flex-row items-start justify-center gap-10 p-10 max-w-6xl mx-auto mt-15">
-        <div className="flex flex-col gap-4 w-full md:w-1/3">
-          <h1 className="text-xl text-white">{artist.NameTattoo}</h1>
-          <img
-            src={artist.Artist}
-            alt={artist.NameTattoo}
-            className="w-60 h-60 object-cover shadow-lg"
-          />
+      <div className="flex flex-col items-start justify-center gap-10 p-10 max-w-6xl mx-auto mt-15">
+        <div className="flex flex-col md:flex-row w-full ">
+          <div className="flex flex-col w-3/4 gap-5">
+            <h1 className="text-xl text-white">{artist.NameTattoo}</h1>
+            <img
+              src={artist.Artist}
+              alt={artist.NameTattoo}
+              className="w-60 h-60 md:w-68 md:h-68 object-cover shadow-lg"
+            />
+          </div>
+          <div className="flex flex-row mt-12 ">
+            <p className="text-white text-sm md:text-lg w-4/5">{artist.bio}</p>
+          </div>
         </div>
 
         <div className="text-left text-white flex flex-row gap-4 w-full md:w-2/3">
           <button className="text-white bg-secondary px-6 py-2 h-10 hover:bg-accent transition">
             Instagram
           </button>
-          <p className="text-white text-sm">{artist.bio}</p>
         </div>
       </div>
 

@@ -4,12 +4,12 @@ export const SectionImages = () => {
   const { artist } = useArtist();
 
   const heights = [
-    "h-[250px] sm:h-[300px]",
-    "h-[150px] sm:h-[180px]",
-    "h-[180px] sm:h-[200px]",
-    "h-[280px] sm:h-[320px]",
-    "h-[220px] sm:h-[260px]",
-    "h-[300px] sm:h-[350px]",
+    "h-[250px] sm:h-[300px] md:h-[300px]",
+    "h-[150px] sm:h-[180px] md:h-[200px]",
+    "h-[180px] sm:h-[200px] md:h-[400px]",
+    "h-[280px] sm:h-[320px] md:h-[300px]",
+    "h-[220px] sm:h-[260px] md:h-[200px]",
+    "h-[300px] sm:h-[350px] md:h-[400px]",
   ];
 
   {
@@ -26,7 +26,6 @@ export const SectionImages = () => {
         className="
             grid 
             grid-cols-1
-            sm:grid-cols-2
             gap-4
             "
       >
