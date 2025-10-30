@@ -11,17 +11,17 @@ export const CardFaq = ({ ask, response }: FaqProps) => {
       <li className="flex flex-col items-center gap-2">
         <div className="flex flex-row items-center justify-between w-full">
           {" "}
-          <p className="text-sm">{ask}</p>
+          <p className="text-sm md:text-lg">{ask}</p>
           {open ? (
             <img
-              className="w-5 h-5 cursor-pointer"
+              className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
               src={MinusIcon}
               alt="MinusIcon"
               onClick={() => setOpen(false)}
             />
           ) : (
             <img
-              className="w-5 h-5 cursor-pointer"
+              className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
               src={PlusIcon}
               alt="PlusIcon"
               onClick={() => setOpen(true)}
@@ -31,7 +31,7 @@ export const CardFaq = ({ ask, response }: FaqProps) => {
 
         {open ? (
           <div className="flex flex-row justify-center items-center">
-            <p className="text-[11px]">{response}</p>
+            <p className="text-[11px] md:text-[14px]">{response}</p>
           </div>
         ) : null}
       </li>

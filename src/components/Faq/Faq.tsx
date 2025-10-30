@@ -6,10 +6,10 @@ export const Faq = () => {
       className="w-full  text-white flex flex-col justify-center items-center p-4 gap-4"
       id="faq"
     >
-      <p className="flex flex-row justify-center items-center text-2xl ">
+      <p className="flex flex-row justify-center items-center text-2xl md:text-3xl">
         Perguntas Frequentes
       </p>
-      <span className="text-[12px] text-center">
+      <span className="text-[12px] md:text-[16px] text-center">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
         voluptatum nesciunt.
       </span>
