@@ -22,7 +22,7 @@ export const ArtistPage = () => {
 
       {/* Seção principal */}
       <div className="flex flex-col items-start justify-center gap-10 p-10 max-w-6xl mx-auto mt-15">
-        <div className="flex flex-col md:flex-row w-full ">
+        <div className="flex flex-col md:flex-row w-full md:gap-10 ">
           <div className="flex flex-col w-3/4 gap-5">
             <h1 className="text-xl text-white">{artist.NameTattoo}</h1>
             <img
@@ -37,7 +37,7 @@ export const ArtistPage = () => {
         </div>
 
         <div className="text-left text-white flex flex-row gap-4 w-full md:w-2/3">
-          <button className="text-white bg-secondary px-6 py-2 h-10 hover:bg-accent transition">
+          <button className="text-white bg-secondary px-6 py-2 h-10 hover:bg-accent transition cursor-pointer">
             Instagram
           </button>
         </div>

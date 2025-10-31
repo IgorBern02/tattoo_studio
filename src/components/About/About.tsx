@@ -16,13 +16,13 @@ export const About = ({ backgroundImage }: AboutProps) => {
       {" "}
       {/* Gradiente escuro */}
       <div className="absolute inset-0 bg-black/60 z-0"></div>
-      <div className="flex flex-col justify-center gap-3">
+      <div className="flex flex-col justify-center gap-3 items-center">
         <h2 className="relative flex flex-row md:justify-center md:items-center gap-3 text-2xl md:text-3xl font-bold text-secondary p-4 w-full text-left uppercase">
           Sobre o Tattoo Studio
           <img src={TattoMachine} alt="Tatto Machine" />
         </h2>
-        <div className="h-0.5 w-5/6 bg-white ml-5"></div>
-        <p className="relative text-sm md:text-lg text-gray-200 p-4 w-full text-left">
+        <div className="h-0.5 w-full md:w-5/6 bg-white "></div>
+        <p className="relative text-sm md:text-lg text-gray-200 p-4 w-full md:w-5/6 text-left">
           No Tattoo Studio, acreditamos que cada tatuagem é uma obra de arte
           única que reflete a personalidade e a história de quem a carrega. Com
           uma equipe de artistas talentosos e apaixonados, oferecemos um

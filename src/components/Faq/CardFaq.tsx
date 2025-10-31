@@ -30,7 +30,7 @@ export const CardFaq = ({ ask, response }: FaqProps) => {
         </div>
 
         {open ? (
-          <div className="flex flex-row justify-center items-center">
+          <div className="flex flex-row w-full">
             <p className="text-[11px] md:text-[14px]">{response}</p>
           </div>
         ) : null}
