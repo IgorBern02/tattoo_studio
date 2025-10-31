@@ -3,7 +3,7 @@ import { CardFaq } from "./CardFaq";
 export const Faq = () => {
   return (
     <div
-      className="w-full  text-white flex flex-col justify-center items-center p-4 gap-4"
+      className="w-full  text-white flex flex-col justify-center items-center p-4 gap-4 md:mt-10"
       id="faq"
     >
       <p className="flex flex-row justify-center items-center text-2xl md:text-3xl">

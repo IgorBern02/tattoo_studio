@@ -16,8 +16,8 @@ export const SectionImages = () => {
     /* Seção das imagens (grid responsivo mobile) */
   }
   return (
-    <section className="w-full bg-black px-6 py-16">
-      <h2 className="text-2xl font-bold text-white mb-8 text-center">
+    <section className="w-full bg-black px-6 py-16 lg:p-32">
+      <h2 className="text-2xl font-irish font-normal text-white mb-8 text-center">
         Obras de {artist.NameTattoo}
       </h2>
 
@@ -41,7 +41,9 @@ export const SectionImages = () => {
             {artist.Tattoos.map((tattoo, index) => (
               <div
                 key={index}
-                className={`${heights[index % heights.length]} overflow-hidden`}
+                className={`${
+                  heights[index % heights.length]
+                } overflow-hidden cursor-pointer`}
               >
                 <img
                   src={tattoo}

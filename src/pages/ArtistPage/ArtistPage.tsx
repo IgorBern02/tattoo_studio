@@ -24,7 +24,9 @@ export const ArtistPage = () => {
       <div className="flex flex-col items-start justify-center gap-10 p-10 max-w-6xl mx-auto mt-15">
         <div className="flex flex-col md:flex-row w-full md:gap-10 ">
           <div className="flex flex-col w-3/4 gap-5">
-            <h1 className="text-xl text-white">{artist.NameTattoo}</h1>
+            <h1 className="text-xl text-white font-irish font-normal">
+              {artist.NameTattoo}
+            </h1>
             <img
               src={artist.Artist}
               alt={artist.NameTattoo}

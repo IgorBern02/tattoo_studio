@@ -7,7 +7,10 @@ import { FooterInfoItem } from "./FooterInfoItem";
 
 export const Footer = () => {
   return (
-    <footer className="w-full text-white bg-[#090909] px-5 py-2" id="footer">
+    <footer
+      className="w-full text-white bg-[#090909] px-5 py-2 md:p-4"
+      id="footer"
+    >
       <FooterHeader title="Tattoo Studio" icon={TattooMachine} />
 
       <ul className="flex flex-col">

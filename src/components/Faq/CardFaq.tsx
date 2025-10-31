@@ -8,7 +8,7 @@ export const CardFaq = ({ ask, response }: FaqProps) => {
 
   return (
     <ul className="w-fullflex flex-col gap-4 p-4 bg-[#1D1D1D] rounded-xl ">
-      <li className="flex flex-col items-center gap-2">
+      <li className="flex flex-col items-center gap-2 ">
         <div className="flex flex-row items-center justify-between w-full">
           {" "}
           <p className="text-sm md:text-lg">{ask}</p>

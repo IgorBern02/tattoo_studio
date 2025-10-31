@@ -17,7 +17,7 @@ export const About = ({ backgroundImage }: AboutProps) => {
       {/* Gradiente escuro */}
       <div className="absolute inset-0 bg-black/60 z-0"></div>
       <div className="flex flex-col justify-center gap-3 items-center">
-        <h2 className="relative flex flex-row md:justify-center md:items-center gap-3 text-2xl md:text-3xl font-bold text-secondary p-4 w-full text-left uppercase">
+        <h2 className="relative flex flex-row font-irish font-normal md:justify-center md:items-center gap-3 text-2xl md:text-3xl text-secondary p-4 w-full text-left uppercase">
           Sobre o Tattoo Studio
           <img src={TattoMachine} alt="Tatto Machine" />
         </h2>

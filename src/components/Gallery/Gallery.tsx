@@ -18,7 +18,7 @@ export const Galery = ({ backgroundImage }: GaleryProps) => {
       {/* Gradiente escuro */}
       <div className="absolute inset-0 bg-black/60 z-0"></div>
       <div className="w-4/5">
-        <h2 className="relative text-2xl md:text-3xl font-bold text-secondary uppercase mb-6">
+        <h2 className="relative text-2xl md:text-3xl font-irish font-normal text-secondary uppercase mb-6">
           Galeria de Arte
         </h2>
 

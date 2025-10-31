@@ -69,7 +69,7 @@ export const Carousel = () => {
           className="h-full bg-secondary transition-all duration-500"
           style={{
             width: `${
-              (((currentIndex + 2) % images.length) / images.length) * 100
+              (((currentIndex + 2) % images.length) / images.length) * 135
             }%`,
           }}
         ></div>
